@@ -1,0 +1,86 @@
+---
+title: Submission and Formatting Instructions for ICML 24
+subtitle: Submission and Formatting Instructions for International Conference on Machine Learning
+authors:
+  - name: Name1 Surname
+    equal-contributor: true
+    affiliations:
+      - ref: cmu
+      - ref: chicago
+  - name: Name2
+    corresponding: true
+    email: "xx@edu.com"
+    affiliations:
+      - ref: cmu
+      - ref: chicago
+  - name: Name3
+    equal-contributor: true
+    affiliations:
+      - ref: chicago
+affiliations:
+  - id: cmu
+    department: Department of computer science
+    name: Carnegie Mellon University
+    city: Shenzhen
+    country: China
+  - id: chicago
+    name: University of Chicago
+    city: Chicago
+abstract: |
+  This document provides a basic paper template and submission guidelines.
+  Abstracts must be a single paragraph, ideally between 4--6 sentences long.
+  Gross violations will trigger corrections at the camera-ready phase.
+keywords:
+  - Machine Learning
+  - ICML
+bibliography: example.bib
+format: 
+  icml24-pdf:
+    accepted: false
+---
+
+# Dimensions
+
+::: {#def-def1}
+
+# AA
+
+**AA** is a thing.
+
+:::
+
+{{< lipsum 1 >}}
+
+From @def-def1, We can know that
+
+::: {#thm-try}
+
+# basic
+
+$$
+  x^2+1=0
+$$
+
+:::
+
+:::: {.proof}
+
+Left as an exercise to the reader.
+
+::::
+
+
+{{< lipsum 1 >}}
+
+1. It is a thing.
+1. It is a thing.
+
+[@mitchell80] @mitchell80
+
+## Detail
+
+{{< lipsum 1 >}}
+
+# Dimensions
+
+{{< lipsum >}}
