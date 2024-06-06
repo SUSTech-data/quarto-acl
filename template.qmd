@@ -1,6 +1,5 @@
 ---
-title: Submission and Formatting Instructions for ICML 24
-subtitle: Submission and Formatting Instructions for International Conference on Machine Learning
+title: "Instructions for *ACL Proceedings"
 authors:
   - name: Name1 Surname
     equal-contributor: true
@@ -27,60 +26,43 @@ affiliations:
     name: University of Chicago
     city: Chicago
 abstract: |
-  This document provides a basic paper template and submission guidelines.
-  Abstracts must be a single paragraph, ideally between 4--6 sentences long.
-  Gross violations will trigger corrections at the camera-ready phase.
+  This document is a supplement to the general instructions for *ACL authors. It contains instructions for using the \LaTeX{} style files for ACL conferences.
+  The document itself conforms to its own specifications, and is therefore an example of what your manuscript should look like.
+  These instructions should be used both for papers submitted for review and for final versions of accepted papers.
 keywords:
   - Machine Learning
   - ICML
-bibliography: example.bib
+bibliography: custom.bib
 format: 
-  icml24-pdf:
+  acl-pdf:
     accepted: false
 ---
 
-# Dimensions
 
-::: {#def-def1}
+# Introduction
 
-# AA
+These instructions are for authors submitting papers to \*ACL conferences using \LaTeX. They are not self-contained. All authors must follow the general instructions for \*ACL proceedings [^1], and this document contains additional instructions for the \LaTeX{} style files.
 
-**AA** is a thing.
+The templates include the \LaTeX{} source of this document (`acl_latex.tex`), the \LaTeX{} style file used to format it (`acl.sty`),
+an ACL bibliography style (`acl_natbib.bst`),
+an example bibliography (`custom.bib`),
+and the bibliography for the ACL Anthology (`anthology.bib`).
 
-:::
+[^1]: [http://acl-org.github.io/ACLPUB/formatting.html](http://acl-org.github.io/ACLPUB/formatting.html)
 
-{{< lipsum 1 >}}
+# Engines
 
-From @def-def1, We can know that
+To produce a PDF file, pdf\LaTeX{} is strongly recommended (over original \LaTeX{} plus dvips+ps2pdf or dvipdf). Xe\LaTeX{} also produces PDF files, and is especially suitable for text in non-Latin scripts.
 
-::: {#thm-try}
+You can use the command \verb|\citealp| (alternative cite without parentheses) to get ``author, year'' citations, which is useful for using citations within parentheses [e.g. @Gusfield:97]
 
-# basic
-
-$$
-  x^2+1=0
-$$
+::: {#refs}
 
 :::
 
-:::: {.proof}
+\appendix
 
-Left as an exercise to the reader.
+# Example Appendix
 
-::::
+This is an appendix.
 
-
-{{< lipsum 1 >}}
-
-1. It is a thing.
-1. It is a thing.
-
-[@mitchell80] @mitchell80
-
-## Detail
-
-{{< lipsum 1 >}}
-
-# Dimensions
-
-{{< lipsum >}}
